@@ -1,0 +1,35 @@
+table {
+    border-collapse: collapse;
+}
+  
+table, th, td {
+    padding: 10px;
+}
+
+.Gatx {
+  color: rgb(230, 137, 137);
+}
+
+.Perrx {
+  color: rgb(132, 201, 132);
+}
+
+.Pez {
+  color: rgb(152, 152, 247);
+}
+
+.container-listado {
+  color: white;
+  margin: 42px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.938);
+  border-radius: 10px;
+  margin-left: 38%;
+  margin-right: 5%;
+}
+
+.container-error{
+  color: rgb(255, 255, 255);
+  background-color: rgba(184, 0, 0, 0.952);
+}
+

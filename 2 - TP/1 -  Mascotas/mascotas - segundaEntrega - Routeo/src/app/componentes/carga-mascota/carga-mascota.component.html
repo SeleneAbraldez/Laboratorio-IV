@@ -1,0 +1,22 @@
+<div class="container-carga">
+    <h2><u>Ingrese los datos de su mascota:</u></h2>
+    <label for="nombre">Nombre:</label> &nbsp;&nbsp;
+        <input [(ngModel)]="mascota.nombre" type="text" id="nombre">
+    <br>
+    <label for="foto">Enlace de la foto:</label> &nbsp;&nbsp;
+        <input [(ngModel)]="mascota.foto" type="text" id="foto">
+    <br>
+    <label for="tipo">Tipo:</label> &nbsp;&nbsp;
+        <select [(ngModel)]="mascota.tipo" id="tipo">
+            <option disabled selected value> -- Elija su tipo -- </option>
+            <option value="Gatx">Gatx</option>
+            <option value="Perrx">Perrx</option>
+            <option value="Pez">Pez</option>
+        </select>
+    <br><br>
+    <input (click)="SubirMascota()" type="button" value="Cargar Mascota">
+    <br><br>
+</div>
+
+
+

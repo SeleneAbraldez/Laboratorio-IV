@@ -1,0 +1,16 @@
+<div *ngIf="mascota.nombre != undefined" class="container-detalles">
+    <br>
+    <br>
+    <div [ngClass]="mascota.tipo">
+        <br>
+        {{mascota.id}}.
+        <br>
+        La mascota es unx {{mascota.tipo}},
+        <br>
+        se llama {{mascota.nombre}}
+        <br>
+        <img [src]="mascota.foto" alt="foto" srcset="" class="center" height="100">
+        <br>
+        <br>
+    </div>
+</div>

@@ -1,0 +1,4 @@
+agarramos el tp que antes no tenia routeo y se lo agregamos
+poner que si al routeo o importar
+definir path y componentes asociados
+

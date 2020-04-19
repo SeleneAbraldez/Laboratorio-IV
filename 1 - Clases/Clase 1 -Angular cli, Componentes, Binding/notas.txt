@@ -1,0 +1,32 @@
+npm h - ayuda
+npm install - 
+
+npm i moment - horarios
+npm i moment lodash 
+
+/// 
+utilizar guion en las tags oara diferenciar las nativas de las customs
+///
+
+npm install -g @angular/cli
+ng new clase1
+cd clase1
+ng serve
+
+//modulo aplicacion de angular 
+objeto con varias declaraciones con componentes (etiquetas que creamos nosotrxs)
+imports para todos los modulos que utilizimos 
+prov - 
+bootstrap en que componente va a inciiar mi aplicacion
+
+//styele scc es para global, pero hay luego cada uno particular a cada html
+
+///para los archivos -> g 
+ng g component test
+//para poner componenetes juntos y ordenados
+ng g component componentes/bindeo
+ng g component componentes/saludo
+
+
+////
+bindeo de una llave

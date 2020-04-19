@@ -1,0 +1,19 @@
+table {
+    border-collapse: collapse;
+}
+  
+table, th, td {
+    padding: 10px;
+}
+
+.Gatx {
+  color: rgb(230, 137, 137);
+}
+
+.Perrx {
+  color: rgb(132, 201, 132);
+}
+
+.Pez {
+  color: rgb(152, 152, 247);
+}

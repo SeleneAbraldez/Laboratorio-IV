@@ -1,0 +1,44 @@
+.container-carga {
+    margin: 22px;
+    text-align: center;
+    background-color: rgba(226, 210, 255, 0.952);
+    border-radius: 40px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.container-listado {
+    color: white;
+    margin: 42px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.938);
+    border-radius: 10px;
+    margin-left: 38%;
+    margin-right: 5%;
+}
+
+h2{
+    font-size: 33px;
+    padding: 10px;
+    margin: 5px;
+}
+
+label {
+    font-size: 20px;
+}
+
+table {
+    border-collapse: collapse;
+  }
+  
+table, th, td {
+    border: 1px solid rgb(211, 211, 211);
+    padding: 10px;
+}
+
+
+
+
+  
+
+

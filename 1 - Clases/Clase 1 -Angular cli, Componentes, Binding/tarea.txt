@@ -1,0 +1,2 @@
+agregar botones para cambiar de foto y tipo de animal
+(resuelto, en carpeta de clase 2. esta mezclado con clases pero no importa)

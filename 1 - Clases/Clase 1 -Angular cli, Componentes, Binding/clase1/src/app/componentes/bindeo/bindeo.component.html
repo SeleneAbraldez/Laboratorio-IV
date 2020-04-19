@@ -1,0 +1,7 @@
+<div>
+    <img [src]="srcFoto" alt="">
+    <br>
+    <p>Hola {{nombre}}!</p>
+    <input type="text" [(ngModel)]="nombre">
+    <input type="button" value="Enviar" (click)="enviar($event)">
+</div>

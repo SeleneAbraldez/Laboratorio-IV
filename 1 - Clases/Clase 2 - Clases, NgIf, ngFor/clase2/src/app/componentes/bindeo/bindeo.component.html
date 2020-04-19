@@ -1,0 +1,25 @@
+<div class="container">
+    <img [src]="srcFoto" alt="Gatito" srcset="">
+
+    <br><br>
+    Nombre: <input [(ngModel)]="nombre" type="text" name="gato" id="gato">
+    <br>
+    Especie: <input (click)="Tipo('G')" type="button" value="Gatitx"> <input (click)="Tipo('A')" type="button" value="Axolote"> <input (click)="Tipo('N')" type="button" value="Nutria">
+    <br><br>
+    ¿{{tipo}} se llama {{nombre}}?
+    <br>
+    <input (click)="enviar($event)" type="button" value="Enviar informacion">
+    <!-- ngif si se cumple una condicion aparece el texto div -->
+    <!-- <div *ngIf="nombre == 'Luna'">
+        <br>
+        Luna lunera, cascabelera.
+    </div> -->
+
+    <!-- genera un array de las mascotas generadas -->
+    <div *ngFor="let mascota of lista; index as i" class="mascota">
+        <!-- {{i+1}}{{mascota.nombre}} -->
+        <!-- esto se envia -->
+        <app-mascota (turno)="sacarTurno($event)" [mascota]="mascota">
+        </app-mascota>
+    </div>
+</div>

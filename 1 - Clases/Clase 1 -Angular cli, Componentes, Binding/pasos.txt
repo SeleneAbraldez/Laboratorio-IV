@@ -1,0 +1,13 @@
+ionic strart x xx --type=angular
+cd x
+npm i firebase @angular/fire
+
+ionic generate page paginas/registro
+ionic generate page paginas/login
+
+ionic g service service/auth
+ng g guard guards/auth
+
+--------------------------------
+
+ionic cordova build android

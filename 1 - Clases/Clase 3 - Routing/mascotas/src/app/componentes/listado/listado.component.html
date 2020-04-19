@@ -1,0 +1,28 @@
+<!-- hago una tabla con los nombres de los aniameles, pasadonle la info -->
+<!-- le pregunto si existe alguno antes d generar la tabla -->
+<table *ngIf="veterinaria != null" class="container-listado">
+    <tr>
+        <b>
+            <td>¿Ver Detales?</td>
+            <td> &nbsp;&nbsp;</td>
+            <td>Nombre de la mascota</td>
+        </b>
+    </tr>
+    <!-- y geenero un tr por cada unx -->
+    <tr *ngFor="let mascotaFila of veterinaria" class="mascota">
+        <!-- <td *ngFor="let mascotaColumna of veterinaria" class="mascota"> -->
+            <div [ngClass]="mascotaFila.tipo">
+                <td><input type="button" value="Ver Detalles" (click)="VerDetalles(mascotaFila.id)"></td>
+                <td> &nbsp;&nbsp;</td>
+                <td>{{mascotaFila.nombre}}</td>
+            </div>
+        <!-- </td> -->
+    </tr>
+</table>
+
+<!-- si no existe le doy un error -->
+<div *ngIf="veterinaria == null" class="container-error">
+    <br>
+    NO HAY ANIMALES CARGADXS
+    <br><br>
+</div>

@@ -1,0 +1,26 @@
+servicios
+
+ng g service services/storage
+inyera¿cratr en el modulo porque los servicios no se inyectan automatico, va en los providers
+
+poder compartir inf0rmacion entre hermanos y tener la logica separada para poder ser referenciado de forma externa
+
+
+observable prograamcion reactiva, flujo de datos string (menos complicados que las rpomesas, grupos de dos en dos en vez de si o si uno como promesas)
+
+
+diferenciar logica de datos, para poder ser mas ordenadx y poder reutilizar codigo
+
+tonto: de presetacion
+
+separar compoentes lo ams posible a la lñarga sera mejor para la hora de generalizar y reutilizar codigo
+
+componentes label solo para escribir un h2
+
+componentes atomicos con una sola resposabilidad
+
+
+framework css a angular 
+ng add @angular/*
+materia, bootstrap, etc
+

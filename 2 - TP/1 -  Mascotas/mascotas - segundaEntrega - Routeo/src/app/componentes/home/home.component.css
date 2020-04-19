@@ -1,0 +1,8 @@
+.container-home {
+    margin: 22px;
+    text-align: center;
+    background-color: rgba(226, 210, 255, 0.952);
+    border-radius: 40px;
+    margin-left: 30%;
+    margin-right: 30%;
+}

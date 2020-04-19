@@ -1,0 +1,9 @@
+ng if si se da la condicion se genera
+*ngIF="nombre=='juan'"
+mensje pa juan
+ng for crea un array de items 
+*ngFor="let item of [1,2,3,4]"
+tambien se puede hacver con index en i e ir de i a i
+
+ng g class
+Importar imput @clase

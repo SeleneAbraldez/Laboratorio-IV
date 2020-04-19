@@ -1,0 +1,11 @@
+<div [ngClass]="mascota.foto">
+    <td><input type="button" value="Ver Detalles" (click)="VerDetalles()"></td>
+    <td> &nbsp;&nbsp;</td>
+    <td>{{mascota.nombre}}</td>
+</div>
+
+<div *ngIf="mostrarDetalles == true">
+<app-mascota
+    [mascota]="mascota">
+</app-mascota>
+</div>

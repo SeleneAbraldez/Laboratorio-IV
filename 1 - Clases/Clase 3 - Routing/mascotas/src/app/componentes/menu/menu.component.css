@@ -1,0 +1,17 @@
+.container-menu {
+    color: white;
+    text-align: center;
+    border: 1px solid plum;
+    background-color: rgba(0, 0, 0, 0.767);
+    border-radius: 40px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+a{
+    color: plum;
+}
+
+.active-link{
+    color: white;
+}
