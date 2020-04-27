@@ -1,0 +1,35 @@
+si el routeo no se genera, se puede generar creando un modulo llamda app-routingg
+ng g module app-routing --flat --module=app
+
+import { RouterModule, Router } from "@angular/router" en app routinf
+agregar las rutas importando routermodeule y routes y que componentes van en cada path
+
+seprarar en componentes logicos y de presentacion
+
+modulos son privados a menos que se reaicen exportaiones
+
+restringir rutas y validarlas
+anguolar guards
+rutas que se van a activar en algun momento que se active la ruta
+atributos propiedadesd a la ruta
+canactivate service antes de ir a la ruta
+canactivatechld es como canactivate pero para los hijos, para no poner varios si uno general 
+candeactivate se activa despues
+
+canactivate si la pongo en falso no entra, manda la info por ej de console log, peor no va  ala url
+(los publicos van primero, privados y error)
+
+si agregamos e paks.json un comado npm agregamos run
+
+///voy a dejar el clase 5 que hice yo como esta, ya que el profe despues lo absa en su base de datos y como yo no tengo uan no tendria el mas minimo sentido???
+//igual adjunto su copidog
+
+
+
+npm install @auth0/angular-jtw
+para mejor manejo de jtw 
+enviar cabeceras
+http cabecera token
+
+incluir el module en el appmodule
+iportar en el cosntructor, decod token
