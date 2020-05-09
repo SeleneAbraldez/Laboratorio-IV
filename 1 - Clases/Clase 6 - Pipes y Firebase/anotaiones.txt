@@ -1,0 +1,5 @@
+pipes
+reciben y encadenan datos, devolviendo otros
+realizan un cambio
+angular pipes
+se puede generar el proipo, usar en html o ty
