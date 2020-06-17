@@ -1,0 +1,32 @@
+<!-- <form>
+    <div class="form-group">
+        <label for="nombre">Nombre: </label>
+        <input type="text" class="form-control" id="nombre" required name="nombre">
+    </div>
+
+    <div class="form-group">
+        <label for="apellido">Apellido: </label>
+        <input type="text" class="form-control" id="apellido" name="apellido">
+    </div>
+    <br>
+    <re-captcha (resolved)="resolved($event)" siteKey="6LdcXAAVAAAAAHxGowz5uvLwIFdjXXyUBfkoxTuy"></re-captcha>
+    <br>
+    <button (click)="enviar()" type="button">Enviar</button>
+</form> -->
+
+<form 
+    novalidate
+    (ngSubmit)="submit()" 
+    [formGroup]="formulario">
+    <input 
+        type="text" 
+        class="form-control" 
+        formControlName="nombre">
+
+    <br>
+    <button
+        type="submit"
+        class="btn btn-succes"
+    >Enviar
+    </button>
+</form>

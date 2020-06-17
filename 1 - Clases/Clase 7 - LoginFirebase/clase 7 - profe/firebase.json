@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "clase3",
+      "public": "dist/clase3",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+<div>
+    <br>
+    <div>
+        <input type="text" [(ngModel)]="user" name="user" id="user">
+    <br>
+
+        <input type="text" [(ngModel)]="apellido" name="apellido" id="apellido">
+    <br>
+
+        <input type="submit" value="Login" (click)="guardar()">
+    </div>
+    <div *ngFor="let chat of listaChat | async" >
+        {{chat.date.seconds | date:"h:mm a"}} {{chat.user}} - {{chat.mensaje}}
+    </div>
+    <!-- <div *ngFor="let alumno of listaAlumnos" >
+        {{alumno.name}} - {{alumno.apellido}}
+    </div> -->
+</div>
