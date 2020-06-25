@@ -1,0 +1,58 @@
+<div id="main">
+    <div class="caption">
+        <div *ngIf="!signed">
+            <h1>Learn Tarot today!</h1>
+        </div>
+        <div *ngIf="signed">
+            <h1>Welcome back!</h1>
+        </div>
+        <p>Get a little snippet into the mystical world of tarot and learn all of the 78 cards and their meanings!<br>
+            The Tarot deck is divided in Major Arcana (22 cards) and Minor Arcana (56 cards) divided in four suits (14
+            cards each). 
+        <div *ngIf="!signed">
+            To start learning the craft, you will have to login. <br> If you login, you can even save your favourite cards for studying
+            and re-reading later! <br><br>
+            <a href="/login"><button click="">Let's start with Login!</button></a>
+        </div>
+        <div *ngIf="signed">
+            You can start learning the craft, right now! <br> You can even save your favourite cards for studying
+            and re-reading later! <br><br>
+            <a href="/majorArcana"><button click="">Let's start with Major Arcana!</button></a>
+        </div>
+        <br>
+    </div>
+</div>
+
+<section id="row">
+    <ul class="col-md-12">
+        <li class="col-md-3">
+            <img src="http://www.suzannetreister.net/HEXEN2/TAROT_COL/WandsAce_RStallman.jpg" alt="thumb 1">
+        </li>
+        <li class="col-md-3">
+            <img src="http://www.suzannetreister.net/HEXEN2/TAROT_COL/TAROT_WofF-Cybernetics.jpg" alt="thumb 2">
+        </li>
+        <li class="col-md-3">
+            <img src="http://www.suzannetreister.net/HEXEN2/TAROT_COL/TAROT_Star-Quantum.jpg" alt="thumb 3">
+        </li>
+        <li class="col-md-3">
+            <img src="http://www.suzannetreister.net/HEXEN2/TAROT_COL/Pentacles9_Computing5786.jpg" alt="thumb 4">
+        </li>
+    </ul>
+</section>
+
+<section id="copyright">
+    <div class="wrapper">
+        <br>
+        Made by Selene Abraldez for UTN LAB IV
+        <br>
+        using <a href="https://github.com/howlCode/tarot_api">howlCode API</a> (he was even nice enought to answer my
+        emails and run the api for me!)
+        <br>
+        and <a href="http://www.suzannetreister.net/HEXEN2/HEXEN_2.html"> Suzanne Treister Tarot</a> about programming
+        and anarchism .
+        <br>Angular, bootstrap,
+        <br>Primer cuatrimestre 2020, cuarentena.
+        <br>
+    </div>
+    <br>
+</section>

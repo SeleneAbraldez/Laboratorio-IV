@@ -1,0 +1,110 @@
+.body { 
+    background-color: rgb(91, 39, 133); 
+    width: 100%;
+    height: 100%;
+}
+
+.table td {
+   vertical-align: middle;
+ }
+/* 
+ .html{
+  color: rgb(91, 39, 133) !important; 
+ } */
+
+ button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: rgb(81, 59, 105);
+  border: 2px dotted tan;
+  width: 100%;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  border: 0;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  height: 130%;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+button:hover, button:active, button:focus {
+  background: rgb(180, 165, 114);
+}
+
+
+
+.trinity-rings-spinner, .trinity-rings-spinner * {
+  box-sizing: border-box;
+}
+
+.trinity-rings-spinner {
+  height: 215px;
+  width: 215px;
+  margin-left: 280%;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  align-items: center;
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+  /* box-sizing: border-box; */
+}
+.trinity-rings-spinner .circle {
+  position: absolute;;
+  display:block;
+  border-radius:50%;
+  border: 3px solid #000000;
+  opacity: 1;
+}
+
+.trinity-rings-spinner .circle:nth-child(1) {
+  height: 90px;
+  width: 90px;
+  animation : trinity-rings-spinner-circle1-animation 1.5s infinite linear;
+  border-width: 3px;
+}
+.trinity-rings-spinner .circle:nth-child(2) {
+  height: calc(90px * 0.65);
+  width: calc(90px * 0.65);
+  animation : trinity-rings-spinner-circle2-animation 1.5s infinite linear;
+  border-width: 2px;
+}
+.trinity-rings-spinner .circle:nth-child(3) {
+  height: calc(90px * 0.1);
+  width: calc(90px * 0.1);
+  animation:trinity-rings-spinner-circle3-animation 1.5s infinite linear;
+  border-width: 1px;
+}
+
+@keyframes trinity-rings-spinner-circle1-animation{
+  0% {
+    transform: rotateZ(20deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateZ(100deg) rotateY(360deg);
+  }
+}
+@keyframes trinity-rings-spinner-circle2-animation{
+  0% {
+    transform: rotateZ(100deg) rotateX(0deg);
+  }
+  100% {
+    transform: rotateZ(0deg) rotateX(360deg);
+  }
+}
+@keyframes trinity-rings-spinner-circle3-animation{
+  0% {
+    transform: rotateZ(100deg) rotateX(-360deg);
+  }
+  100% {
+    transform: rotateZ(-360deg) rotateX(360deg);
+  }
+}
+

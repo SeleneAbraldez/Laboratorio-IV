@@ -1,0 +1,63 @@
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="home">
+        🔮 Tarot
+    </a>
+
+    <div>
+        <a href="all" class="menu-opciones">
+            Whole deck -
+        </a>
+        -
+        <a href="majorArcana" class="menu-opciones">
+            Major Arcana
+        </a>
+        -
+        <a href="minorArcana" class="menu-opciones">
+            Minor Arcana
+        </a>
+        -
+        <a href="random" class="menu-opciones">
+            - Random card
+        </a>
+    </div>
+    
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search for a card" aria-label="Search" [(ngModel)]="parametro" name="parametro">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="button" (click)="buscarCarta(parametro)">🔍</button>
+    </form>
+
+    <div *ngIf="!signed">
+        <div class="menu-notsig">
+            <a href="signUp" class="menu-ingresar">
+                Sign Up
+            </a>
+            |
+            <a href="login" class="menu-ingresar">
+                Log In
+            </a>
+        </div>
+    </div>
+
+    <div *ngIf="signed">
+        <div class="menu-siguser">
+            <a href="favs">
+                💜
+            </a>
+            -
+            Welcome
+            <a href="user" class="menu-usuarix">
+                {{payloadname}}
+            </a>
+            -
+            <svg class="bi bi-power" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg" (click)="turnOff()">
+                <path fill-rule="evenodd" d="M5.578 4.437a5 5 0 1 0 4.922.044l.5-.866a6 6 0 1 1-5.908-.053l.486.875z" />
+                <path fill-rule="evenodd" d="M7.5 8V1h1v7h-1z" />
+            </svg>
+        </div>
+    </div>
+
+
+
+
+</nav>

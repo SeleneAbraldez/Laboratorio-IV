@@ -1,0 +1,24 @@
+<div class="login-page">
+    <div class="form">
+        <br>
+        <form class="login-form">
+            <input type="mail" placeholder="email" [(ngModel)]="Usu.email" name="Usu.email" />
+            <input type="text" placeholder="nombre" [(ngModel)]="Usu.nombre" name="Usu.nombre" />
+            <input type="password" placeholder="contraseña" [(ngModel)]="Usu.password" name="Usu.password" />
+            <p>{{message}}</p>
+            <div *ngIf="spinner">
+                <div class="col-md-2 loader5 bg-green-grd">
+                    <div class="trinity-rings-spinner">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <re-captcha (resolved)="resolved($event)" siteKey="6LdcXAAVAAAAAHxGowz5uvLwIFdjXXyUBfkoxTuy"></re-captcha>
+            <br>
+            <button type="button" *ngIf="todoOk == true" (click)="register()">Registrarse</button>
+            <p class="message">¿Ya posee una cuenta? <a href="login">Ingrese</a></p>
+        </form>
+    </div>
+</div>

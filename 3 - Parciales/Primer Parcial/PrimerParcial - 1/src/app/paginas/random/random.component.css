@@ -1,0 +1,29 @@
+.body { 
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(99,32,120,1) 16%, 47%, rgba(93,38,111,1) 74%, rgba(55,40,62,1) 100%);
+    height: 100%;
+    width: 100%;
+    padding: 2% 1px 2% 20%;
+}
+
+
+.card{
+    width: 80%;
+    border-radius: 20px;
+    border: rgb(191, 194, 151);
+    border-width: thick;
+    border-style: solid;
+    padding: 10px;
+}
+
+.img-fluid{
+    height: 95%;
+    border-radius: 20px;
+    align-content: center;
+    padding-right: 15px;
+    max-height: 500px;
+}
+
+h2{
+    font-family: 'Kaushan Script', cursive;
+}

@@ -1,0 +1,122 @@
+.fondo
+{ 
+  /* background-color: black; */
+  padding:0;
+  margin:0;
+  width: 100%;
+  height: 92%;
+  position: absolute;
+}
+
+h4{
+    color: rgb(245, 232, 174);
+    text-align: center;
+}
+
+.image
+{
+  text-align:center;
+  margin:0 auto;
+  color: black;
+  width: 100%;
+}
+
+#witch
+{
+	animation:witch-anim 4s ease-out 2s forwards; 
+}
+@keyframes witch-anim {
+    0% {
+        transform: translate(0px,0px);
+    }
+    33% {
+        transform: translate(100px,0px);
+    }
+	66% {
+        transform: translate(150px,-40px);
+    }
+	100% {
+       transform: translate(800px,-100px);
+    }
+}
+
+#web
+{
+	animation:web-anim 4s ease-out 6s forwards; 
+}
+@keyframes web-anim {
+    0% {
+	opacity:1;
+        transform: scale(1,1) translate(0px,0px);
+    }
+	33% {
+	opacity:1;
+        transform: scale(1,0.8) translate(0px,30px);
+    }
+	66% {
+		opacity:1;
+        transform: scale(1,1.2) translate(0px,-40px);
+    }
+	67% {
+		opacity:0;
+    }
+	100% {
+		opacity:0;
+    }
+}
+#spider
+{
+	animation:spider-anim 4s ease-out 6s forwards; 
+}
+@keyframes spider-anim {
+    0% {
+        transform: translate(0px,0px);
+    }
+    33% {
+        transform: translate(0px,-40px);
+    }
+	66% {
+        transform: translate(0px,20px);
+    }
+	100% {
+       transform: translate(0px,300px);
+    }
+}
+#moon-bg
+{
+	animation:moon-bg-anim 3.5s ease-out infinite ;
+	transform-origin:50% 50%;
+}
+@keyframes moon-bg-anim {
+    0% {
+		opacity:0;
+        transform: scale(0.9);
+    }
+
+	50% {
+        opacity:1;
+        transform: scale(1.1);
+    }
+
+	100% {
+       opacity:0;
+        transform: scale(0.9);
+    }
+}
+#shade
+{
+	animation:shade-anim 3.5s ease-out infinite ;
+}
+@keyframes shade-anim {
+    0% {
+		opacity:0.5;
+    }
+
+	50% {
+        opacity:1;
+    }
+
+	100% {
+       opacity:0.5;
+    }
+}

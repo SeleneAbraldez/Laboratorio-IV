@@ -1,0 +1,27 @@
+<div class="login-page">
+    <div class="form">
+        <!-- <img src="../../../assets/img/singup.png" class="image"> -->
+        <form class="login-form">
+            <input type="text" placeholder="titulo" [(ngModel)]="titulo" name="titulo" />
+            <input type="text" placeholder="info" [(ngModel)]="info" name="info" />
+            <input type="number" placeholder="latitud" [(ngModel)]="latitud" name="latitud" />
+            <input type="number" placeholder="longitud" [(ngModel)]="longitud" name="longitud" />
+            <br>
+            <br>
+            <p>{{message}}</p>
+            <div *ngIf="spinner">
+                <div class="col-md-2 loader5 bg-green-grd">
+                    <div class="trinity-rings-spinner">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- <re-captcha (resolved)="resolved($event)" siteKey="6LdcXAAVAAAAAHxGowz5uvLwIFdjXXyUBfkoxTuy"></re-captcha> -->
+            <!-- <br> -->
+            <button type="button" 
+            >Alta Producto</button>
+        </form>
+    </div>
+</div>

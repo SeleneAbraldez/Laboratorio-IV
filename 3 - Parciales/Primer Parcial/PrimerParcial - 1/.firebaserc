@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "tarotutn": {
+      "hosting": {
+        "PrimerParcial": [
+          "tarotutn"
+        ]
+      }
+    }
+  }
+}

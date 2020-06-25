@@ -1,0 +1,35 @@
+<div class="login-page">
+    <div class="form">
+        <!-- <img src="../../../assets/img/singup.png" class="image"> -->
+        <form class="login-form">
+            <input type="text" placeholder="nombre" [(ngModel)]="producAux.nombre" name="producAux.nombre" />
+            <input type="text" placeholder="marca" [(ngModel)]="producAux.marca" name="producAux.marca" />
+            <input type="number" placeholder="stock" [(ngModel)]="producAux.stock" name="producAux.stock" />
+            <select class="custom-select" [(ngModel)] = "producAux.tipo" style="width: 100%;" name="producAux.tipo">
+                <option value = "comestible">Comestible</option>
+                <option value = "bebible">Bebible</option>
+                <option value = "limpieza">Limpieza</option>
+            </select>
+            <br>
+            <select class="custom-select" [(ngModel)]="producAux.localNombre" style="width: 100%;" name="aut.tipo">
+                <option *ngFor="let local of locales" [value]="local.nombre">{{local.nombre}}</option>
+            </select><br><br>
+            <input type="number" placeholder="precio" [(ngModel)]="producAux.precio" name="producAux.precio" />
+            <br>
+            <p>{{message}}</p>
+            <div *ngIf="spinner">
+                <div class="col-md-2 loader5 bg-green-grd">
+                    <div class="trinity-rings-spinner">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- <re-captcha (resolved)="resolved($event)" siteKey="6LdcXAAVAAAAAHxGowz5uvLwIFdjXXyUBfkoxTuy"></re-captcha> -->
+            <button type="button" (click)="cancelar()" style="background: rgb(175, 76, 76);">Cancelar</button>
+            <button type="button" 
+            (click)="subirProd()">Alta Producto</button>
+        </form>
+    </div>
+</div>

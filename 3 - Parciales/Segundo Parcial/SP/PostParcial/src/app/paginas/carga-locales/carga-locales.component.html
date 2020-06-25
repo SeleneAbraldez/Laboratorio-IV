@@ -1,0 +1,26 @@
+<div class="login-page">
+    <div class="form">
+        <!-- <img src="../../../assets/img/singup.png" class="image"> -->
+        <form class="login-form">
+            <input type="text" placeholder="nombre" [(ngModel)]="locals.nombre" name="locals.nombre" />
+            <input type="email" placeholder="email" [(ngModel)]="locals.email" name="locals.email" />
+            <input type="number" placeholder="telefono" [(ngModel)]="locals.telefono" name="locals.telefono" />
+            <input type="text" placeholder="localidad" [(ngModel)]="locals.localidad" name="locals.localidad" />
+            <br>
+            <br>
+            <p>{{message}}</p>
+            <div *ngIf="spinner">
+                <div class="col-md-2 loader5 bg-green-grd">
+                    <div class="trinity-rings-spinner">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <re-captcha (resolved)="resolved($event)" siteKey="6LdcXAAVAAAAAHxGowz5uvLwIFdjXXyUBfkoxTuy"></re-captcha>
+            <br>
+            <button type="button" *ngIf="todoOk" (click)="subirLocal()">Alta Local</button>
+        </form>
+    </div>
+</div>

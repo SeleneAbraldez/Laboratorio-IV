@@ -1,0 +1,21 @@
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<div class="body">
+    <div class="container">
+        <div class="card bg-dark text-white">
+            <div class="row no-gutters align-items-center">
+                <div class="col-auto">
+                    <img src="{{cartaRandom[0].image}}" class="img-fluid" alt="">
+                </div>
+                <div class="col">
+                    <div class="card-block px-2">
+                        <h2 class="card-title"><b>{{cartaRandom[0].name | titulos | titlecase}} </b></h2>
+                        <p class="card-text"><b>Summary:</b><br>{{cartaRandom[0].summary}}</p>
+                        <p class="card-text"><b>Full Meaning:</b><br>{{cartaRandom[0].full_meaning}}</p>
+                        <p class="card-text"><b>Upright:</b><br>{{cartaRandom[0].upright | titlecase}}</p>
+                        <p class="card-text"><b>Reverse:</b><br>{{cartaRandom[0].reversed | titlecase}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

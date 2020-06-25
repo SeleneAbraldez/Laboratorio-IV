@@ -1,0 +1,34 @@
+<div style="position: fixed; width: 30%; z-index: 99; margin-left: 35%;" *ngIf="modificar">
+    <app-modificar-producto [produc]="produ" (cerrar)="cerrarModificarPro()"></app-modificar-producto>
+  </div>
+  <table class="table" id="tablaProd" style="background-color: rgb(94, 110, 156);color:white">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Marca</th>
+        <th>Stock</th>
+        <th>Precio</th>
+        <th>Tipo</th>
+        <th>Nombre Local</th>
+        <th>Localidad Local</th>
+        <th>Modificar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let prod of productos">
+        <td>{{prod.nombre}}</td>
+        <td>{{prod.marca}}</td>
+        <!-- <div [ngClass]="prod.stock"> -->
+        <td>{{prod.stock | stock}}</td>
+        <td>{{prod.precio}}</td>
+        <td [ngClass]="prod.tipo">{{prod.tipo | stock}}</td>
+        <td>{{prod.localNombre}}</td>
+        <td>{{prod.localLocalidad}}</td>
+        <td><button type="button" class="btn btn-light" (click)="modificarPro(prod)">Modificar</button></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <div style="margin-left: 35%;">
+    <app-descargas [tabla]="productos"></app-descargas>
+  </div>
