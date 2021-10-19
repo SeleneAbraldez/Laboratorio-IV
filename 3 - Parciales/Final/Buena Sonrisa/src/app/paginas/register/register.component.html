@@ -1,0 +1,26 @@
+<div class="login-page">
+    <div class="form">
+        <img src="https://cdn0.iconfinder.com/data/icons/dentist-element-1/64/Clear-tooth-teeth-dentist-dental-tool-512.png" class="image">
+        <br>
+        <br>
+        <form class="login-form">
+            <input type="mail" placeholder="Email" [(ngModel)]="cliente.email" name="cliente.email" />
+            <input type="text" placeholder="Nombre" [(ngModel)]="cliente.nombre" name="cliente.nombre" />
+            <input type="password" placeholder="Contraseña" [(ngModel)]="cliente.contrasenia" name="cliente.contrasenia" />
+            <input *ngIf="cliente.email" type="file" value="Subir foto" (change)="subirFoto($event)">
+            <p>{{message}}</p>
+            <div *ngIf="spinner">
+                <div class="col-md-2 loader5 bg-green-grd">
+                    <div class="trinity-rings-spinner">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <re-captcha (resolved)="resolved($event)" siteKey="6LdcXAAVAAAAAHxGowz5uvLwIFdjXXyUBfkoxTuy"></re-captcha>
+            <button *ngIf="todoOk" type="button" (click)="register()">Registrarse</button>
+            <p class="message">¿Ya posee una cuenta? <a href="login">Ingrese</a></p>
+        </form>
+    </div>
+</div>

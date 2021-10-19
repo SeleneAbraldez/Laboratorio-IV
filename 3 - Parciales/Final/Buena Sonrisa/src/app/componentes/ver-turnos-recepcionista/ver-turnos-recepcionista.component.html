@@ -1,0 +1,19 @@
+<b>Ver Turnos Vigentes</b>
+<table class="table" id="tablaAutos" style="background-color: rgb(94, 110, 156);color:white">
+    <thead>
+        <tr>
+            <th>Fecha</th>
+            <th>Cliente</th>
+            <th>Especialista</th>
+            <th>Cancelar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let turno of turnos">
+                <td>{{turno.fecha}}</td>
+                <td>{{turno.cliente}}</td>
+                <td>{{turno.especialista}}</td>
+                <td><button class="btn btn-danger" (click)="cancelarTurno(turno)">Calcelar Turno</button></td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,50 @@
+<b>Sacar turno</b>
+<div class="login-page">
+    <div class="form">
+        <!-- <img src="../../../assets/img/singup.png" class="image"> -->
+        <label style="color: antiquewhite;">1 - Elija su especialista para mostrar sus turnos disponibles:</label>
+        <form class="login-form">
+            <select class="custom-select" [(ngModel)]="turno.especialista" style="width: 100%;"
+                name="turno.especialista" (click)="buscarFechas(turno.especialista)">
+                <option value="especialista1@hotmail.com">Especialista 1</option>
+                <option value="especialista2@gmail.com">Especialista 2</option>
+            </select>
+            <br>
+            <br>
+
+            <label *ngIf="turno.especialista" style="color: antiquewhite;">2 - Elija la fecha disponible mas
+                conveniente:</label>
+            <select *ngIf="turno.especialista" class="custom-select" [(ngModel)]="turno.fecha" name="turno.fecha">
+                <!-- muestro unicamente las fechas disponibles -->
+                <ng-container *ngFor="let fecha of fechasDisp">
+                    <option *ngIf="fecha.disponible == 'si'" [value]="fecha.fecha">
+                        {{fecha.fecha}}
+                    </option>
+                    <!-- <option disabled *ngIf="fecha.disponible == 'no'" [value]="fecha.fecha" style="color: rgb(218, 218, 218);">
+                        {{fecha.fecha}}
+                    </option> -->
+                </ng-container>
+            </select>
+
+            <label *ngIf="turno.especialista && turno.fecha" style="color: antiquewhite;">3 - Ingrese el nombre de cliente, recuerde que este no estara registrado, es solo para indicarle al especialista una referencia:</label>
+            <div  *ngIf="turno.especialista && turno.fecha" class="input-group mb-3">
+                <input type="text"  [(ngModel)]="nombre" name="nombre" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+
+            <p>{{message}}</p>
+            <div *ngIf="spinner">
+                <div class="col-md-2 loader5 bg-green-grd">
+                    <div class="trinity-rings-spinner">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+
+            <label *ngIf="turno.especialista && turno.fecha && nombre" style="color: antiquewhite;">4 - Si ya esta segurx de su
+                decisión, saque el turno para el cliente:</label>
+            <button *ngIf="turno.especialista && turno.fecha && nombre" type="button" (click)="sacarTurno()">Sacar Turno</button>
+        </form>
+    </div>
+</div>

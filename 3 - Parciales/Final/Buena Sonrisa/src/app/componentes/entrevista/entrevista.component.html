@@ -1,0 +1,17 @@
+<div class="login-page" *ngIf="!cerrar" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index:99;">
+    <div class="form">
+        <pre>Especialista {{turno.especialista}}: <b>{{especialista}}</b></pre>
+        <ngb-rating [(rate)]="especialista"></ngb-rating>
+        <hr>
+        <pre>Clinica: <b>{{clinica}}</b></pre>
+        <ngb-rating [(rate)]="clinica"></ngb-rating>
+        <hr>
+        <label>¿Desea escribir una reseña sobre su experiencia?</label>
+        <div class="input-group">
+            <textarea class="form-control" [maxLength]="66" aria-label="With textarea" [(ngModel)]="resenia" name="resenia"></textarea>
+        </div>
+        <br>
+        <button class="btn btn-danger" style="width: 40%;" (click)="cerrarEncuesta()">Cancelar</button>
+        <button class="btn btn-success" style="width: 40%;" (click)="agregarEncuesta()">Enviar</button>
+    </div>
+</div>

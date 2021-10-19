@@ -1,0 +1,37 @@
+<div class="login-page">
+    <div class="form">
+        <img src="https://cdn0.iconfinder.com/data/icons/dentist-element-1/64/Clear-tooth-teeth-dentist-dental-tool-512.png" class="image">
+        <br><br>
+        <form class="login-form">
+            <input type="text" placeholder="Email" [(ngModel)]="mail" name="mail" />
+            <input type="password" placeholder="Contraseña" [(ngModel)]="password" name="password" />
+            <p>{{message}}</p>
+            <div *ngIf="spinner">
+                <div class="col-md-2 loader5 bg-green-grd">
+                    <div class="trinity-rings-spinner">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- <re-captcha (resolved)="resolved($event)" siteKey="6LdcXAAVAAAAAHxGowz5uvLwIFdjXXyUBfkoxTuy"></re-captcha> -->
+            <br>
+            <button type="button" (click)="logIn()">Ingresar</button>
+            <br>
+            <br>
+            <select class="browser-default custom-select" value="" #C (click)="selecCuenta(C.value)">
+                <option disabled selected>--Seleccione una cuenta guardada--</option>
+                <option value="adm">Administrador</option>
+                <option value="cli1">Cliente 1</option>
+                <option value="cli2">Cliente 2</option>
+                <option value="rec">Recepcionista</option>
+                <option value="es1">Especialista 1</option>
+                <option value="es2">Especialista 2</option>
+            </select>
+            <br>
+            <p class="message">¿No esta registradx? <a href="/register">Cree una cuenta</a></p>
+        </form>
+    </div>
+
+</div>

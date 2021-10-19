@@ -1,0 +1,15 @@
+<div style="width: 100%;">
+    <div style="display: block">
+      <canvas baseChart
+              [datasets]="[
+              {data: [this.esp1], label: 'Especilista 1'},
+              {data: [this.esp2], label: 'Especilista 2'}
+            ]"
+              [labels]="barChartLabels"
+              [options]="barChartOptions"
+              [legend]="barChartLegend"
+              [chartType]="barChartType"
+              [colors]="chartColors">
+      </canvas>
+    </div>
+  </div>

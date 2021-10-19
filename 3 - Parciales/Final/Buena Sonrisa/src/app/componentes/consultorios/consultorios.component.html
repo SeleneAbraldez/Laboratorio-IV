@@ -1,0 +1,15 @@
+<b>Ver Salas</b>
+<table class="table" id="tablaTurn" style="background-color: rgb(94, 110, 156);color:white">
+    <thead>
+        <tr>
+            <th>Numero</th>
+            <th>¿Disponible?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let sala of salas">
+            <td>{{sala.num}}</td>
+            <td><img src="{{sala.disp | libre}}" style="height: 30px;"></td>
+        </tr>
+    </tbody>
+</table>

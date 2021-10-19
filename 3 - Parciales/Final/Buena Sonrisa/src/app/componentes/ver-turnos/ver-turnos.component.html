@@ -1,0 +1,21 @@
+<b>Ver Turnos Vigentes</b>
+<table class="table" id="tablaTurn" style="background-color: rgb(94, 110, 156);color:white">
+    <thead>
+        <tr>
+            <th>Fecha</th>
+            <th>Especialista</th>
+            <th>Salon</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let turno of turnos">
+            <!-- <ng-container *ngIf="turno.cliente == {{email}}"> -->
+                <td>{{turno.fecha}}</td>
+                <td>{{turno.especialista}}</td>
+                <td>{{turno.sala}}</td>
+            <!-- </ng-container> -->
+        </tr>
+    </tbody>
+</table>
+
+<app-descargas [tabla]="turnos"></app-descargas>

@@ -1,0 +1,15 @@
+<b>Ver Sesiones</b>
+<table class="table" id="tablaTurn" style="background-color: rgb(94, 110, 156);color:white">
+    <thead>
+        <tr>
+            <th>Persona</th>
+            <th>Fecha</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let sesion of sesiones">
+            <td>{{sesion.mail}}</td>
+            <td>{{sesion.today.toDate() | date: 'short'}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,58 @@
+<app-navbar></app-navbar>
+
+
+<br>
+<br>
+<!-- si es cliente -->
+<div *ngIf="home === 'cl'" style="max-width:1300px;">
+  <div class="row">
+    <div class="col-sm">
+      <app-sacar-turno></app-sacar-turno>
+    </div>
+    <div class="col-sm">
+      <app-ver-turnos></app-ver-turnos>
+    </div>
+    <div class="col-sm">
+      <app-turnos-pasados></app-turnos-pasados>
+    </div>
+  </div>
+</div>
+
+<!-- si es especialista -->
+<div *ngIf="home === 'esp'" style="max-width:1300px; margin-left: auto;">
+  <div class="row">
+    <div class="col-sm">
+      <app-ver-turnos-especialista></app-ver-turnos-especialista>
+    </div>
+  </div>
+</div>
+
+<!-- si es recepcionista -->
+<div *ngIf="home === 'rec'">
+  <div class="row">
+    <div class="col-3">
+      <app-sacar-turno-recepcionista></app-sacar-turno-recepcionista>
+    </div>
+    <div class="col-6">
+      <app-ver-turnos-recepcionista></app-ver-turnos-recepcionista>
+    </div>
+    <div class="col-3">
+      <app-consultorios></app-consultorios>
+    </div>
+  </div>
+</div>
+
+<!-- si es administrador -->
+<div *ngIf="home === 'adm'">
+  <div class="row">
+    <div class="col-4">
+      <app-ver-sesiones></app-ver-sesiones>
+    </div>
+    <div class="col-4">
+      <app-registrar-admin></app-registrar-admin>
+    </div>
+    <div class="col-4">
+      <app-graficos></app-graficos>
+    </div>
+  </div>
+</div>

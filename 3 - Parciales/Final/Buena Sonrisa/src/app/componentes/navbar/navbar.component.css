@@ -1,0 +1,27 @@
+.menu-opciones {
+    color: rgb(216, 210, 218);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+  }
+  
+  .menu-ingresar {
+    color: rgb(228, 228, 215);
+    background-color: #8c70dc;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 10px;
+    font-style: normal;
+  }
+  
+  .menu-notsig {
+    color: rgb(216, 210, 218);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+  }
+  
+  .menu-siguser {
+    color: rgb(216, 210, 218);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  
